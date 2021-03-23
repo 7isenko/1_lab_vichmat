@@ -36,6 +36,9 @@ public class DiagonalDominanceMatrixRearranger {
     }
 
     private void agileSafeSwap(int diagonalIndex, int dominantElementRowIndex) {
+        if (matrix[dominantElementRowIndex][diagonalIndex] == matrix[diagonalIndex][diagonalIndex]) {
+            return;
+        }
         if (!strictColumn) {
             dominantElementRowIndex = getDominantElementRowIndex(diagonalIndex, dominantElementRowIndex);
             if (isSwapPossible(diagonalIndex, dominantElementRowIndex)) {
