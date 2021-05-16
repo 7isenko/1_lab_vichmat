@@ -11,7 +11,7 @@ public class SimpleIterationsCalculator {
     private final double accuracy;
 
     private final double[] answer;
-    private final double[] inaccuracy; // Epsilon
+    private final double[] inaccuracy; // Epsilon vector
     private int iterationsCount = 0;
     private double[] tmpX;
 
